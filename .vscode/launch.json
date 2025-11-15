@@ -1,0 +1,44 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Run Algebra",
+            "request": "launch",
+            "mainClass": "Algebra"
+        },
+        {
+            "type": "java",
+            "name": "Run Anagram",
+            "request": "launch",
+            "mainClass": "Anagram"
+        },
+        {
+            "type": "java",
+            "name": "Run LoanCalc",
+            "request": "launch",
+            "mainClass": "LoanCalc"
+        },
+        {
+            "type": "java",
+            "name": "Run TestAlgebra",
+            "request": "launch",
+            "mainClass": "TestAlgebra"
+        },
+        {
+            "type": "java",
+            "name": "Run TestAnagram",
+            "request": "launch",
+            "mainClass": "TestAnagram"
+        }
+    ]
+}
