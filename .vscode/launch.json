@@ -26,7 +26,8 @@
             "type": "java",
             "name": "Run LoanCalc",
             "request": "launch",
-            "mainClass": "LoanCalc"
+            "mainClass": "LoanCalc",
+            "args": "100000 5 10"
         },
         {
             "type": "java",
