@@ -52,7 +52,6 @@ public class LoanCalc {
 			iterationCounter++;
 			g += epsilon;
 
-			// Dual safeguards: reasonable upper bound AND iteration limit
 			if (g > loan) {
 				break;
 			}
