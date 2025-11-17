@@ -48,12 +48,12 @@ public class LoanCalc {
 		iterationCounter = 0;
 		double g = loan / n;
 
-		while (Math.abs(endBalance(loan, rate, n, g)) > epsilon) {
+		while (endBalance(loan, rate, n, g) > epsilon) {
 			iterationCounter++;
-			g += 0.001;
+			g += epsilon;
 
 			// Dual safeguards: reasonable upper bound AND iteration limit
-			if (g > loan || iterationCounter > 1000000) {
+			if (g > loan) {
 				break;
 			}
 		}
@@ -67,8 +67,8 @@ public class LoanCalc {
 	// Side effect: modifies the class variable iterationCounter.
 	public static double bisectionSolver(double loan, double rate, int n, double epsilon) {
 		iterationCounter = 0;
-		double low = 0;
-		double high = loan * Math.pow((1 + rate / 100), n) / n;
+		double low = loan / n;
+		double high = loan;
 		double mid = 0;
 		int maxIterations = 1000000; // Prevent infinite loops
 
